@@ -1,0 +1,225 @@
+@charset "utf-8";
+
+* {
+  user-select: none;
+}
+
+html,
+body {
+  font-family: "Nico Moji";
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+html {
+  transition: all 800ms;
+  background: #fff;
+}
+.wrap,
+.hoge,
+.piyo,
+.poyo {
+  width: 100%;
+  height: 100%;
+  transition: all 300ms;
+}
+
+.hoge {
+  position: absolute;
+  display: none;
+  top: 50%;
+  margin-top: -150px;
+  z-index: 100;
+}
+.hoge-inner {
+  width: 600px;
+  margin: 0 auto;
+  background: #ff9090;
+  color: #FFF;
+  text-align: center;
+  padding: 35px 50px 30px;
+  border-radius: 150px;
+  font-size: 30px;
+}
+.hoge-msg {
+  margin-bottom: 30px;
+}
+.hoge-id ,
+.hoge-pass {
+  margin-bottom: 20px;
+}
+.hoge-id label,
+.hoge-pass label {
+  width: 100px;
+  display: inline-block;
+}
+.hoge-id input,
+.hoge-pass input {
+  width: 250px;
+  line-height: 2;
+  border-radius: 50px;
+  padding: 5px 15px;
+  font-size: 15px;
+  font-weight: bold;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: #555;
+}
+.btn-submit {
+  padding: 5px 15px;
+  background: #fff;
+  color: #f18e8f;
+  display: inline-block;
+  margin-top: 10px;
+  border-radius: 50px;
+  border: 3px solid #fff;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+}
+.btn-submit:hover {
+  opacity:  0.75;
+}
+.btn-submit:active {
+  background: #f18e8f;
+  color: #fff;
+  opacity:  1;
+}
+
+.piyo,
+.poyo {
+  position: relative;
+  opacity: 0;
+}
+.piyo-msg {
+  font-size: 50px;
+  position: fixed;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  padding: 0 0 10px;
+  animation-duration: 3s !important;
+}
+.piyo-inner {
+  width: 700px;
+  height: 100%;
+  overflow: hidden;
+  margin: 85px auto 0;
+  border-radius: 400px;
+}
+.piyo-list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 2450px;
+  height: 700px;
+  transition: all 500ms;
+}
+.piyo-item {
+  float: left;
+  display: inline-block;
+  width: 700px;
+  height: 700px;
+  border-radius: 400px;
+  overflow: hidden;
+  border: 7px solid #fff;
+  box-sizing: border-box;
+}
+.piyo-item img {
+  width: 700px;
+}
+.piyo-ctrl-list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  position: absolute;
+  top: 300px;
+}
+.piyo-ctrl-item {
+  position: absolute;
+  color: #fff;
+  font-size: 100px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.piyo-ctrl-item:hover {
+  opacity: .5;
+}
+.piyo-ctrl-item.prev {
+  left: 50px;
+}
+.piyo-ctrl-item.next {
+  right: 50px;
+}
+.piyo-omake {
+  position: fixed;
+  width: 55px;
+  line-height: 55px;
+  text-align: center;
+  bottom: 20px;
+  right: 30px;
+  padding: 15px;
+  background: #fff;
+  border-radius: 50px;
+  font-size: 20px;
+  border: 4px solid #555;
+  cursor: pointer;
+}
+.piyo-omake:hover {
+  opacity: .75;
+}
+.piyo-omake:active {
+  background: #555;
+  color: #fff;
+  opacity: 1;
+}
+
+.logout {
+  position: fixed;
+  z-index: 10000;
+  display: none;
+  bottom: 20px;
+  left: 20px;
+  padding: 10px;
+  font-size: 20px;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #333;
+  transition: all 300ms;
+}
+.logout:hover {
+  opacity: .75;
+}
+.logout:active {
+  opacity: 1;
+  color: #ff9090;
+}
+
+
+
+.is-fade-in {
+  opacity: 1;
+  z-index: 100;
+}
+.is-fade-out {
+  opacity: 0;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.is-show {
+  display: block;
+}
+
+.is-pink {
+  background: #f18e8f !important;
+}

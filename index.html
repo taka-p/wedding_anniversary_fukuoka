@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="user-scalable=no,initial-scale = 1.0,maximum-scale = 1.0">
+    <meta name="robots" content="noindex">
+    <meta name="googlebot" content="noindex">
+    <title>結婚式 | 記念ページ</title>
+    <link href="./assets/animate.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet" />
+    <link href="./assets/style.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+</head>
+<body>
+
+<div class="wrap">
+    <div id="hoge"
+         class="hoge fadeIn animated">
+        <div class="hoge-inner">
+            <div class="hoge-msg">
+                IDとパスワードを、にゅうりょくしてください。
+            </div>
+            <div class="hoge-id">
+              <label for="hoge-id">ID</label>
+              <input id="hoge-id"
+                     type="text"
+                     value=""
+                     placeholder="IDを入力して下さい。">
+            </div>
+            <div class="hoge-pass">
+                <label for="hoge-pass">PASS</label>
+                <input id="hoge-pass"
+                       type="text"
+                       value=""
+                       placeholder="パスワードを入力して下さい。">
+            </div>
+            <button type="button"
+                   id="hoge-submit"
+                   class="btn-submit">
+                けってい
+            </button>
+        </div>
+    </div>
+
+    <div id="piyo"
+         class="piyo">
+        <div class="piyo-msg pulse infinite animated">
+            Wedding anniversary
+        </div>
+        <div class="piyo-inner">
+            <ul class="piyo-list">
+                <li class="piyo-item piyo-1"
+                    data-current="0">
+                    <img src="./assets/wife.JPG">
+                </li>
+                <li class="piyo-item piyo-2"
+                    data-current="1">
+                    <img src="./assets/hide.JPG">
+                </li>
+                <li class="piyo-item piyo-3"
+                    data-current="2">
+                    <img src="./assets/hide_wife.JPG">
+                </li>
+            </ul>
+        </div>
+        <ul class="piyo-ctrl-list">
+            <li class="piyo-ctrl-item prev"
+                id="piyo-prev"> < </li>
+            <li class="piyo-ctrl-item next"
+                id="piyo-next"> > </li>
+        </ul>
+        <div class="piyo-omake jello infinite animated"
+             id="piyp-omake">
+            おまけ
+        </div>
+        <!--<embed src="./assets/hide_music.mp4" width="1" height="1"></embed>-->
+    </div>
+
+    <div class="poyo"
+         id="poyo">
+        <div class="poyo-kotaro">
+          <img src="./assets/kotaro.png"
+               width="100%">
+        </div>
+    </div>
+
+    <div class="logout"
+         id="logout">
+        ログアウトする
+    </div>
+</div>
+
+<script defer src="./assets/main.js"></script>
+
+</body>
+</html>
